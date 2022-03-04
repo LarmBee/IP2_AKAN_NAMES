@@ -1,0 +1,11 @@
+body{
+    color: black;
+    
+}
+.section1{
+    flex: auto;
+    width: 100%;
+    height: 100%;
+
+    background-color: tomato;
+}
