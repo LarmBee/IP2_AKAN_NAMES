@@ -60,3 +60,22 @@ body{
     background-repeat: no-repeat;
     background-size: 200vh, 220vw;
 }
+.inputbx{
+    font-size: 5vh;
+    background-color: #202028;
+    position: absolute;
+    top: 220vh;
+    right:10vh;
+    width: 20%;
+    border-radius: 28px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 1000px;
+}
+.box{
+    border-radius: 12px;
+    border: 0;
+    font-size: 18px;
+    height: 10%;
+}
