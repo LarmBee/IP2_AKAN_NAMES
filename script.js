@@ -1,6 +1,14 @@
-const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" , "Sunday"];
-
-let a = "Monday";
-    if (days.includes(a)){
-        console.log("It is available")
+function validateForm() {
+    var un = document.loginform.fname.value;
+    console.log(u)
+    var pw = document.loginform.pword.value;
+    var username = "username"; 
+    var password = "password";
+    if ((un == username) && (pw == password)) {
+       return true;
+   }
+   else {
+      alert ("Login was unsuccessful, please check your username and password");
+      return false;
+   }
 }
