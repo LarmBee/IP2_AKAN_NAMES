@@ -178,3 +178,12 @@
 .submit:active {
   background-color: #06b;
 }
+.result{
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(250, 65, 96);
+  position: absolute;
+  top: 260vh;
+  left: 10vh;
+}
