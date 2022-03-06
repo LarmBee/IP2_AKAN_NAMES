@@ -1,14 +1,13 @@
 function validateForm() {
-    var un = document.loginform.fname.value;
-    console.log(u)
-    var pw = document.loginform.pword.value;
-    var username = "username"; 
-    var password = "password";
-    if ((un == username) && (pw == password)) {
-       return true;
+   let name = document
+   let gender = document.querySelector("#gender")
+   if (gender ="Male" || "male"){
+      alert("Gender is Male")
    }
-   else {
-      alert ("Login was unsuccessful, please check your username and password");
-      return false;
+   else if (gender = "Female" || "female"){
+   alert("Gender is female")
+   }
+   else{
+      alert("Please input valid gender")
    }
 }
