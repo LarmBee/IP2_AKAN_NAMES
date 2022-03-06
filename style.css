@@ -33,11 +33,12 @@
 
 
 .main{
-    background: crimson;
+    background: #303245;
     margin: 0;
     width: 100%;
     height: 700px;
     padding: 10px;
+    color: white;
     
 }
 
@@ -53,11 +54,11 @@
   background-color: #15172b;
   border-radius: 20px;
   box-sizing: border-box;
-  height: 500px;
+  height: 600px;
   padding: 20px;
   width: 620px;
   position: absolute;
-  top: 230vh;
+  top: 220vh;
   left: 90vh;
 }
 

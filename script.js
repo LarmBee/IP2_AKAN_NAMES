@@ -1,11 +1,21 @@
-function validateForm() {
-   let name = document.querySelector("#firstname")
-   let result =document.querySelector("#result")
-  
-   result.innerHTML = "Hello " + name.value
+
+   let gender =document.querySelector("#gender");
+   function validateForm() {
+   let name = document.querySelector("#firstname");
+   let day =document.querySelector("#DD");
+   let CC = document.querySelector("#CC");
+   let DD = document.querySelector("#DD");
+   let MM =document.querySelector("#MM");
+   let gender =document.querySelector("#gender")
+   let result =document.querySelector("#result");
+
+   let d = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7
+   alert(d)
+   result.innerHTML="Your Akan is Afua"
    }
    
-if (gender === "Male" || "male"){
+   
+   if (gender === "Male" || "male"){
    switch(day){
       case "Sunday":
          console.log("Kwasi");
@@ -29,9 +39,9 @@ if (gender === "Male" || "male"){
          console.log("Kwame")
          break;     
    }
-}
+   }
 
-if (gender === "Female" || "female"){
+   if (gender === "Female" || "female"){
    switch(day){
       case "Sunday":
          console.log("Akosua");
@@ -55,4 +65,4 @@ if (gender === "Female" || "female"){
          console.log("Ama")
          break;     
    }
-}
+   }  
