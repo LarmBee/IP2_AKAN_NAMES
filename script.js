@@ -7,7 +7,7 @@ function validateForm() {
    let YY = document.getElementById("YY").value;
 
    let  d = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) +((26*(MM+1)/10)) + DD ) % 7
-   let day = Math.floor(d)
+   let day = Math.round(d)
    switch(day){
       case 1:
          days="Sunday";
