@@ -1,42 +1,60 @@
+function validateForm() {
+   let name = document.getElementById("firstname").value;
+   let gender = document.getElementById("gender").value;
+   let MM = document.getElementById("MM").value;   
+   let DD = document.getElementById("DD").value;
+   let CC = document.getElementById("CC").value;
+   let YY = document.getElementById("YY").value;
 
-   let gender =document.querySelector("#gender");
-   function validateForm() {
-   let name = document.querySelector("#firstname");
-   let day =document.querySelector("#DD");
-   let CC = document.querySelector("#CC");
-   let DD = document.querySelector("#DD");
-   let MM =document.querySelector("#MM");
-   let gender =document.querySelector("#gender")
-   let result =document.querySelector("#result");
-
-   let d = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7
-   alert(d)
-   result.innerHTML="Your Akan is Afua"
-   }
-   
-   
-   if (gender === "Male" || "male"){
+   let  d = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) +((26*(MM+1)/10)) + DD ) % 7
+   let day = Math.floor(d)
    switch(day){
+      case 1:
+         days="Sunday";
+         break;
+      case 2:
+         days="Monday";
+         break;
+      case 3:
+         days="Wednesday";
+         break; 
+      case 4:
+         days="Thursday";
+         break;
+      case 5:
+         days="Friday";
+         break;
+      case 6:
+         days="Saturday";
+         break;
+      case 7:
+         days = "Sunday";
+         break;
+   }
+
+
+   if (gender.value === "Male" || "male"){
+   switch(days){
       case "Sunday":
-         console.log("Kwasi");
+         Akan =("Kwasi");
          break;
       case "Monday":
-         console.log("Kwadwo")
+         Akan=("Kwadwo")
          break;
       case "Tuesday":
-         console.log("Kwabena")
+         Akan=("Kwabena")
          break; 
       case "Wednesday":
-         console.log("Kwaku")
+         Akan=("Kwaku")
          break;
       case "Thursday":
-         console.log("Yaw")
+         Akan=("Yaw")
          break;
       case "Friday":
-         console.log("Kofi")
+         Akan=("Kofi")
          break;    
       case "Saturday":
-         console.log("Kwame")
+         Akan=("Kwame")
          break;     
    }
    }
@@ -65,4 +83,11 @@
          console.log("Ama")
          break;     
    }
-   }  
+   }
+   
+   greeting.innerHTML=" Hello " + name;
+   result.innerHTML = "You were born on a : " + days;
+   final.innerHTML = "Your Akan Name is :" + Akan;
+
+} 
+
