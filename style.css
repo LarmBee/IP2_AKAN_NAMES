@@ -83,7 +83,7 @@
   padding: 20px;
   width: 620px;
   position: absolute;
-  top: 240vh;
+  top: 220vh;
   left: 90vh;
 }
 
@@ -101,7 +101,7 @@
   font-weight: 600;
   color: rgb(250, 65, 96);
   position: absolute;
-  top: 250vh;
+  top: 230vh;
   left: 10vh;
 }
 
@@ -225,8 +225,8 @@
   left: 80vh;
 }
 .notes{
+  font: 1em sans-serif;
   position: absolute;
-  top: 130vh;
 }
 
 
@@ -238,21 +238,24 @@
 }
 .zip{
   position: absolute;
-  top: 195vh;
+  top: 175vh;
   left: 20vh;
 }
 .zip1{
   position: absolute;
-  top: 195vh;
+  top: 175vh;
   left: 70vh;
 }
 .zip2{
   position: absolute;
-  top: 195vh;
+  top: 175vh;
   left: 120vh;
 }
 .notes{
   text-align: center;
   position: absolute;
   top: 150vh;
+}
+.arrw{
+
 }
