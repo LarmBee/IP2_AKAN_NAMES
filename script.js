@@ -2,7 +2,15 @@
 
 function validateForm() {
    let name = document.getElementById("firstname").value;
-   let gender = document.querySelector('input[name="gender"]:checked').value;
+   if(name.value== null){
+      alert("Check for empty fields!")
+   }
+   if(gender.value== "undefined"){
+      alert("Check for empty fields!")
+   }
+   else{
+      let gender = document.querySelector('input[name="gender"]:checked').value;
+   }
    let MM = document.getElementById("MM").value;   
    let DD = document.getElementById("DD").value;
    let CC = document.getElementById("CC").value;
@@ -57,11 +65,8 @@ function validateForm() {
    }
    }
 
-   if (gender === "Female" || "female"){
+   if (gender.value === "Female" || "female"){
    switch(day){
-      case "None":
-         Akan = ("Wrong input !");
-         break;
       case "Sunday":
          console.log("Akosua");
          break;
@@ -85,7 +90,7 @@ function validateForm() {
          break;     
    }
    }
-   if (name.value == " "){
+   if (name.value == null){
       alert("Theres a problem with input!!")
    }
    else{
