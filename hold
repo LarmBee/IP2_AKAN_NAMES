@@ -1,0 +1,18 @@
+if(name.value = " "){
+      alert("The name value is missing !!");  
+   }
+   if(gender.value = " "){
+      alert("The gender value is missing !!");
+   }
+   if(MM.value = " "){
+      alert("The Month value is missing !!");
+   }
+   if(DD.value = " "){
+      alert("The Day value is missing !!");
+   }
+   if(CC.value = " "){
+      alert("The Centuary Digit value is missing !!");
+   }
+   if(YY.value = " "){
+      alert("The Year Digit value is missing !!");
+   }
